@@ -2,13 +2,12 @@ import React from 'react'
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import { experiences } from '../data/exampleData'
-//import { services } from '../data/exampleData'
 
-const ExCard = (item) => ( <VerticalTimelineElement
+const ExCard = (e) => ( <VerticalTimelineElement
     className="vertical-timeline-element--work"
     contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
     contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
-    date="{item.title}"
+    date={e.item.date}
     iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
    
   >
